@@ -259,7 +259,11 @@ p10<-plot_ly(df1, y = ~DEP_delay, type = "box",name = "DEP_delay") %>%
   add_trace(y = ~DIF, type = "box", name = "DIF") %>%
   add_trace(y = ~DEPdelay, type = "box",name = "DEPdelay") %>%
   add_trace(y = ~ARRdelay, type = "box",name = "ARRdelay") %>%
-  add_trace(y = ~delay_15_rate, type = "box", name = "delay_15_rate") 
+  add_trace(y = ~delay_15_rate, type = "box", name = "delay_15_rate")%>%
+  layout(margin=mars,
+         xaxis=list(tickfont=axisfont),
+         yaxis=list(tickfont=axisfont)
+         )
 saveWidget(widget = p10, file = "./Figures/boxall.html")
 shots<-webshot(url = "./Figures/boxall.html", file = "./Figures/boxall.png", delay = 1, zoom = 2)
 ```
