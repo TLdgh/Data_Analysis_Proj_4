@@ -107,7 +107,7 @@ saveWidget(widget = p0, file = "./Figures/num_f.html")
 shots<-webshot(url = "./Figures/num_f.html", file = "./Figures/num_f.png", delay = 1, zoom = 2)
 ```
 
-```{r, echo=FALSE,fig.align='center', fig.cap = "The Number of Flight", out.height="3in", out.width="3in"}
+```{r, echo=FALSE,fig.align='center', fig.cap = "The Number of Flight", out.height="3in", out.width="5in"}
 knitr::include_graphics("./Figures/num_f.png")
 ```
 
@@ -126,7 +126,7 @@ saveWidget(widget = p3, file = "./Figures/dis_del.html")
 shots<-webshot(url = "./Figures/dis_del.html", file = "./Figures/dis_del.png", delay = 1, zoom = 2)
 ```
 
-```{r, echo=FALSE,fig.align='center', fig.cap = "The Distribution of Delay", out.height="3in", out.width="3in"}
+```{r, echo=FALSE,fig.align='center', fig.cap = "The Distribution of Delay", out.height="3in", out.width="5in"}
 knitr::include_graphics("./Figures/dis_del.png")
 ```
 \end{minipage}
@@ -177,7 +177,7 @@ add_lines(y = 1440, mode = "lines", name = "y = 1440", line = list(dash = 'dash'
 ```
 
 ```{r, out.width='70%',echo=FALSE, fig.align='center', fig.cap = "Delay Time"}
-knitr::include_graphics("scatter.png")
+knitr::include_graphics("./Figures/scatter.png")
 ```
 :::
 ::::::
