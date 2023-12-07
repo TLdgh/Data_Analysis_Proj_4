@@ -1,0 +1,22 @@
+# History files
+.Rhistory
+.Rapp.history
+.DS_Store
+# Session Data files
+.RData
+dat_P_sub_c.csv
+dat_F_sub.csv
+BASA_AUC_2028_912.csv
+years20262030.csv
+# RStudio files
+.Rproj.user/
+# Project file
+Data_Analysis_Proj_4.Rproj
+*.html
+*.log
+*.pdf
+Figures/*_files/
+!Citation/*
+MAT5314-Project-3.tex
+References.bib
+DataDictionary.Rmd
